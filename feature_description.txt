@@ -1,0 +1,24 @@
+Feature Description 
+name - name of the superhero / villain
+role - if it is a superhero or villain
+power_level - strength of the superhero / villain
+weight - weight of the superhero / villain
+height - height of the superhero / villain
+age - age of the superhero / villain
+skin_type - skin type of the superhero / villain
+eye_color - eye color of the superhero / villain
+gender - gender of the superhero / villain
+hair_color hair color of the superhero / villain
+speed - speed of the superhero / villain
+universe - universe the superhero / villain belongs to
+body_type - body type of the superhero / villain
+job - job of the superhero / villain
+species - species of the superhero / villain
+ranking - popularity of the superhero / villain
+intelligence - intelligence of the superhero / villain
+battle_iq - battle intelligence of the superhero / villain
+abilities - ability of the superhero / villain
+training_time - training time of the superhero / villain
+special_attack - special attack of the superhero / villain
+secret_code - secret classification code 
+win_prob - winning probability (calculated on previous fights)
