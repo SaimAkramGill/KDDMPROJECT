@@ -1,0 +1,47 @@
+Category,Subcategory,Explanation,Points
+File Handling and Data Merging,Used all 7 files for preprocessing / EDA,All 7 provided source files are loaded and considered during preprocessing / EDA.,1
+File Handling and Data Merging,Successfully merged all 7 files,The 7 source files are merged into a single consistent dataset.,1
+Preprocessing identity card 0,Translated latin names,Latin names in identity card 0 are translated to English / standard form.,1
+Preprocessing identity card 0,Handeled roman labels,Roman numeral labels are detected and converted to a usable form.,1
+Preprocessing identity card 0,Remove Duplicates,Duplicate records in identity card 0 are identified and removed.,1
+Preprocessing identity card 0,Standardize Gender,Gender values are normalised to a single consistent representation.,1
+Preprocessing identity card 0,Correct nationality and birth city,"Nationality and birth-city values are corrected (spelling, format).",1
+Preprocessing identity card 1,Remove duplicates,Duplicate records in identity card 1 are identified and removed.,1
+Preprocessing identity card 1,Correct spelling mistakes (nationality and birth city),Spelling errors in nationality and birth-city fields are corrected.,1
+Preprocessing identity card 1,Standardize Gender,Gender values in identity card 1 are normalised consistently.,1
+Preprocessing medical_information,Combined header,Multi-row / split headers are combined into a single clean header.,1
+Preprocessing medical_information,Preprocess height,Height column is cleaned and converted to a consistent numeric unit.,1
+Preprocessing medical_information,Preprocess weight,Weight column is cleaned and converted to a consistent numeric unit.,1
+Preprocessing medical_information,Preprocess bodyfat,Bodyfat column is cleaned and converted to a usable numeric value.,1
+Preprocessing medical_information,Make NaN really NaNs,"Sentinel / placeholder missing values are converted to real NaN.",1
+Preprocessing medical_information,Clean return date (date formats),Heterogeneous date formats in the return-date column are unified.,1
+Preprocessing medical_information,Clean fitness level,Fitness-level values are normalised / mapped to a consistent scale.,1
+Preprocessing moms_notes,Noted favourite_child_info is the same,Identified that favourite_child_info has the same value for every record.,1
+Preprocessing moms_notes,Noted favourite_tv_show is missing,Identified that the favourite_tv_show column is entirely missing.,1
+Preprocessing moms_notes,Noted favourite_food is empty,Identified that the favourite_food column is empty.,1
+Preprocessing moms_notes,Cleaned birth city,Birth city values in moms_notes are cleaned / standardised.,1
+Preprocessing moms_notes,Cleaned eye color,Eye-color values in moms_notes are cleaned / standardised.,1
+General Preprocessing,Drop NaN rows,Rows that are entirely (or near-entirely) NaN are removed.,1
+Identifying Outliers,Age,Implausible age values are identified as outliers.,1
+Identifying Outliers,Time on ice > age,Records where time on ice is greater than the player's age are flagged.,1
+Identifying Outliers,Draft year < 1900,Draft years before 1900 are flagged as outliers.,1
+Identifying Outliers,Height > 2m,Heights above 2 m are flagged as outliers / impossible.,1
+Identifying Outliers,Save percentage > 1,Save percentages above 1.0 are flagged as outliers.,1
+Identifying Outliers,Number of shots < number of goals,Records where number of shots is less than number of goals are flagged.,1
+Missing value Imputation,Found Birth city Helsinki <-> 2 previous teams,"Detected the dependency: birth city Helsinki implies 2 previous teams. Contributes to the up-to-3-pt pool for imputations (1 pt if ≥1 of the 6 'Found' rules yes, 2 pts if >1, 3 pts if all 6 yes).",0 (counts toward 3-pt  pool)
+Missing value Imputation,Found Birth city Trondheim <-> 4 previous teams,Detected the dependency: birth city Trondheim implies 4 previous teams. Counts toward the 3-pt pool.,0 (counts toward 3-pt  pool)
+Missing value Imputation,Found board game <-> fitness level,Detected the dependency between favourite board game and fitness level. Counts toward the 3-pt pool.,0 (counts toward 3-pt  pool)
+Missing value Imputation,Found captain + veteran <-> dominant hand left,Detected: captain + veteran together imply dominant hand left. Counts toward the 3-pt pool.,0 (counts toward 3-pt  pool)
+Missing value Imputation,Found Birth city Boston or Pittsburgh + female <-> eye color blue,Detected: birth city Boston/Pittsburgh + female implies eye color blue. Counts toward the 3-pt pool.,0 (counts toward 3-pt  pool)
+Missing value Imputation,Stuffed animal name Juan <-> 2 contracts signed,Detected: stuffed-animal name Juan implies 2 contracts signed. Counts toward the 3-pt pool.,0 (counts toward 3-pt  pool)
+Missing value Imputation,Points for the 6 'Found …' relationships above,"Scoring on the 6 'Found …' rules: 1 pt for ≥1 yes, 2 pts for >1 yes, 3 pts if all 6 yes.",0 / 1 / 2 / 3
+Missing value Imputation,"Used different methods to impute categorical MCAR","Used multiple imputation strategies for categorical MCAR (e.g. mode, group-mode).",1
+Missing value Imputation,"Used different methods to impute numerical MCAR","Used multiple imputation strategies for numerical MCAR (e.g. median, mean, KNN).",1
+Data Relationships,Added Correlations,Some form of correlation analysis is included.,1
+Data Relationships,Pearson / Spearman Correlations,Pearson and/or Spearman correlations are computed and reported.,1
+Data Relationships,MIC,Maximal Information Coefficient (MIC) is computed and reported.,1
+Data Relationships,Reported Relationships,Identified relationships between variables are explicitly reported.,1
+Interesting Findings (at least 3),Reported interesting findings (at least 3),"At least 3 non-trivial, interesting findings from the data are reported.",2
+Formal Criteria Deductions,Formal Criteria: Slide numbers,Deduction of -1 if 'Slide Limit' = no (slide limit not respected).,-1
+Formal Criteria Deductions,Formal Criteria: No Plots on Slides,Deduction of -1 if 'Plots on slides' = no (no plots included on slides).,-1
+Formal Criteria Deductions,Formal Criteria: No Approach reported,Deduction of -1 if 'Reported approach to problem' = no.,-1
